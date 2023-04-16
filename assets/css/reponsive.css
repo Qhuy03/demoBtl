@@ -39,12 +39,20 @@
     #menu {
         display: none ;
     }
+
+    .dark-mod {
+        display: none !important;
+    }
 }
 
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 640px) {
     .container {
         width: 100%;
+    }
+
+    .dark-mod {
+        display: none !important;
     }
 
     #header .logo-header {
