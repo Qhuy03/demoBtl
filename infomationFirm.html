@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nhạc mới</title>
     <link rel="stylesheet" href="./assets/css/style.css">  <!-- link css -->
+    <link rel="stylesheet" href="./assets/css/comment.css">
     <link rel="stylesheet" href="./assets/icont/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"> <!--Link icont-->
 </head>
 <body>
@@ -164,9 +165,10 @@
                             </div>
                         </div>
 
+                        <!-- comment -->
                         <div class="container-form-comment">
-                            <div class="total-comment">
-                                <p>2 bình luận</p>
+                            <div class="comment-head">
+                                <!-- <div><span>0</span> bình luận</div> -->
                                 <div class="sort-comment">
                                     <span>Sắp sếp theo</span>
                                     <select name="" id="">
@@ -178,40 +180,51 @@
                             <div class="container-comment-user">
                                 <div class="action-comment-user">
                                     <div class="left-action-comment-user">
-                                        <img src="./assets/images/glx_trade.png" alt="">
+                                        <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt="">
                                     </div>
                                     <div class="right-action-comment-user">
-                                        <div class="input-comment">
-                                            <input type="text" id="input-user-comment">
-                                            <a href="#"><i class="fas fa-camera"></i></a>
-                                        </div>
-                                        <div class="btn-comment-user">
-                                            <button>Đăng</button>
-                                        </div>
+                                        <div>
+                                        <!-- <form> -->
+                                            <textarea id="comment" placeholder="Nhập bình luận..." value="" style="height: 5vw;"></textarea>
+                                        <!-- </form> -->
                                     </div>
-                                    
-                                </div>
+                                    <div class="comment-btn">
+                                        <input id="submit" type="submit" value="Đăng">
+                                    </div>
+                                </div>        
+                            </div>
+                            <div>
                                 <div class="show-comment-user">
-                                    <ul id="ul-show-comment">
-                                        <li>
-                                            <div class="action-comment-user">
-                                                <div class="left-action-comment-user">
-                                                    <img src="./assets/images/glx_trade.png" alt="">
+                                    <h4>Bình luận</h4>
+                                    <div id="comment-box"></div>
+                                </div>
+                                <!-- <div class="post-comment">
+                                    <div class="list">
+                                        <div class="comment-avt">
+                                            <div class="user-image"><img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt=""></div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="user-meta">
+                                                <div class="comment-info">
+                                                    <div class="name">qqqsfsadgsgasdg</div>
+                                                    <div class="day">10 days ago</div>
                                                 </div>
-                                                <div class="right-action-comment-user">
-                                                    <div class="input-comment" id="input-comment">
-                                                        <p>hay quá lo</p>
-                                                    </div>
+                                                <div class="info-btn">
+                                                    <i class="fas fa-heart"></i>
                                                 </div>
                                             </div>
-                                        </li>
+                                            <div class="comment-post">test comment</div>
+                                        </div>
                                         
-                                    </ul>
-                                </div>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
-                       
+
                     </div>
+                </div>
+                       
+            
                     
                     
                 
@@ -368,5 +381,6 @@
    </div>
 
    <script src="./assets/js/app.js"></script> <!--Link js-->
+   <script src="./assets/js/comment.js"></script>
 </body>
 </html>
