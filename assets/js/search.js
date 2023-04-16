@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load',() => {
     const searchContent = document.querySelector(".content-search");
     const searchInput = document.querySelector(".input-search");
     searchContent.style.display = "none";
@@ -34,4 +34,4 @@ window.onload = () => {
         renderFilm(listFilms.filter(item => item["ten_phim"].toLowerCase().includes(value.toLowerCase())))
         searchContent.style.display = "block";
     }
-}
+})
