@@ -236,6 +236,11 @@ a {
     height: 100%;
 }
 
+.content-trending-firm a img{
+    height: 100%;
+    width: 100%;
+}
+
 .content-trending-firm {
     position: relative;
 }
