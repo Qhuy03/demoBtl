@@ -36,13 +36,14 @@
         console.log(menuMobileEle);
 
         menuMobileEle.addEventListener('click', (event) => {
-            if(menuEle.style.display === "block" || menuEle.style.display === "flex") {
-                menuEle.style.display  = "none";
-            } else {
-                menuEle.style.display  = "block";
-            }
+            // if(menuEle.style.display === "block" || menuEle.style.display === "flex") {
+            //     menuEle.style.display  = "none !important";
+            // } else {
+            //     menuEle.style.display  = "block !important";
+            // }
+            menuEle.classList.toggle('open');
         });
-        menuEle.style.display = "flex"; 
+        // menuEle.style.display = "flex"; 
 
 
 // Show data
