@@ -1,3 +1,5 @@
+// Show-comment-user CaoHung
+
 // let inputUserCMT = document.querySelector('#input-user-comment');
 // let ulShow = document.querySelector("#ul-show-comment");
 // let commentUserShow = document.querySelector("#input-comment");
@@ -24,25 +26,29 @@
 //     tagLi[tagLi.length -1].insertAdjacentHTML("afterend", html);
 
 // })
-
-
 // console.log(ulShow);
 
-window.onload = function(){
-    let user_login = localStorage.getItem('user_login');
 
-    if(user_login){
-        console.log('Đã login');
-        document.getElementById('login').remove();
-        document.getElementById('register').remove();
-        // var htmlObj = document.getElementsByClassName('action-header')[0];
-        // htmlObj.innerHTML = htmlObj.innerHTML + `<a href="#"><i class="fa-regular fa-user">         Hello, Bro!</i></a>`;
+// show-Menu-mobile
+        let menuEle = document.querySelector("#menu");
+        let menuMobileEle = document.querySelector(".phone-menu");
+        console.log(menuEle);
+        console.log(menuMobileEle);
 
-        let $profile = document.createElement('a');
-        $profile.href = "#";
-        $profile.innerHTML = `<i class="fa-regular fa-user">         Hello, Bro!</i>`;
+        menuMobileEle.addEventListener('click', (event) => {
+            if(menuEle.style.display === "block" || menuEle.style.display === "flex") {
+                menuEle.style.display  = "none";
+            } else {
+                menuEle.style.display  = "block";
+            }
+        });
+        menuEle.style.display = "flex"; 
 
-        let $bookMark = document.getElementsByClassName('bookmark-user')[0];
-        $bookMark.before($profile);
-    }
-}
+
+// Show data
+// console.log(jsonFirm);
+
+
+$data = localStorage.getItem('firm');
+// console.log($data);
+
