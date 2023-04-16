@@ -30,7 +30,9 @@
 
 window.onload = function(){
     let user_login = localStorage.getItem('user_login');
+
     if(user_login){
+        console.log('Đã login');
         document.getElementById('login').remove();
         document.getElementById('register').remove();
         // var htmlObj = document.getElementsByClassName('action-header')[0];
