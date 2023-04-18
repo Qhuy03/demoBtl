@@ -54,7 +54,7 @@ showMoreDetailFirm.innerHTML = `
     <img src="${valuePresent['anh_phim']}" alt="">
     <div class="container-buton-itemt-img-firm">
         <div class="buton-itemt-img-firm"><a href="#">Tải phim</a></div>
-        <div class="buton-itemt-img-firm"><a href="#">Xem phim</a></div>
+        <div class="buton-itemt-img-firm"><a href="./watchFilm.html?firmId=${filmId}">Xem phim</a></div>
     </div>
 </div>
 

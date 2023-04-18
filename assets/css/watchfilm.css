@@ -3,7 +3,7 @@
     background-color: darkgray;
     height: 2450px;
     width: 100%;
-   padding-top: 30px;
+   /* padding-top: 5px; */
 
 }
 .video{
@@ -73,8 +73,18 @@ div.stars {
     content: '\f006';
     font-family: FontAwesome;
   }
-.danhgia{
-    margin-left: auto;
-    margin-right: auto;
-}
+
   
+.container_film_khac{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  
+
+}
+
+.film_khac{
+  background-color: darkgray;
+
+}
+

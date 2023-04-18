@@ -5,10 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Phim hay</title>
     <link rel="stylesheet" href="./assets/css/style.css"> <!-- link css -->
     <link rel="stylesheet" href="./assets/css/watchfilm.css"> <!-- link css -->
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <link rel="stylesheet" href="./assets/css/watchcomment.css">
+    <link rel="stylesheet" href="./assets/css/comment.css">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    
+    <style>
+        .carousel-item .active{
+            display: flex !important;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
 
     
 </head>
@@ -28,11 +40,11 @@
                     <a href=""><i class="fas fa-search"></i></a>
                 </div>
                 <div class="action-header">
-                    <div class="login-user">
-                        <a href="#"><i class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a>
+                    <div class="login-user" id="login">
+                        <a href="./login.html"><i class="fa-solid fa-right-to-bracket"></i>Đăng nhập</a>
                     </div>
-                    <div class="register-user">
-                        <a href="#"><i class="fa-solid fa-registered"></i>Đăng kí</a>
+                    <div class="register-user" id="register">
+                        <a href="./register.html"><i class="fa-solid fa-registered"></i>Đăng kí</a>
                     </div>
                     <div class="bookmark-user">
                         <a href="#"><i class="fa-solid fa-bookmark"></i>Bookmark</a>
@@ -64,7 +76,7 @@
 
                     </li>
                     <li>
-                        <a href="#">Nhạc mới</a>
+                        <a href="#">Phim mới</a>
                     </li>
                     <li>
                         <a href="#">Hot Hit</a>
@@ -81,8 +93,8 @@
     </div>
     <div class="content">
         <div class="headerr">
-            <h1>hahhhaa
-
+            <h1 style="color: white; justify-content: center; text-align: center;">
+                         Chúc quý vị xem phim vui vẻ ! 
             </h1>
         </div>
         <div class="video">
@@ -102,16 +114,103 @@
             </form>
           </div>
         </div>
-        <div class="danhgia">
+        <div class="container_film_khac">
+            <h5>Có thể bạn muốn xem</h5>
+            <div class="film_khac">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                       <img height="200px" width="180px " style="margin-right:10px; margin-left: 15px;" src="https://upload.wikimedia.org/wikipedia/vi/0/0e/Little_Star_Wars_2021.jpg" alt="">
+                       <img height="200px" width="180px  "  style="margin-right:15px" src="https://ngaymoionline-cdn.mastercms.vn/stores/news_dataimages/dangthuthuy/122022/14/10/2234_avatar-1-3796.jpg?rt=20221214102314" alt="">
+                       <img height="200px" width="180px  "  style="margin-right:15px"src="https://image.mpapis.xyz/poster/an-danh-phan-1-11002.jpg" alt="">
+                       <img height="200px" width="180px  "  style="margin-right:15px"src="https://blogradio.vn/uploads/cms/source/2021/20/moitinhdaucuatoi_(1).jpg" alt="">
+                       <img height="200px" width="180px  " src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zSadxGzPiewj6NxUbPSId43EJJrfqJzYrWnZnQ2VvrBlhaRJ4ftM-ANVsIQzWA_56AY&usqp=CAU" alt="">
+                      </div>
+                      <div class="carousel-item">
+                       <img height="200px" width="180px  " style="margin-right:10px; margin-left: 15px" src="https://2sao.vietnamnetjsc.vn/images/2022/10/25/11/15/black-adam-1.jpg" alt="">
+                       <img height="200px" width="180px  " style="margin-right:15px" src="https://static2.vieon.vn/vieplay-image/thumbnail_v4/2023/03/23/8mkmn3t9_1920x1080-tinhyeumathoi1.png" alt="">
+                       <img height="200px" width="180px  " style="margin-right:15px"  src="https://ghienphim3.net/uploads/sat-thu-john-wick-phan-4-john-wick-chapter-4_banner_.jpg?v=1680153965" alt="">
+                       <img height="200px" width="180px  " style="margin-right:15px"  src="https://newsmd2fr.keeng.net/tiin/archive/imageslead/2022/09/04/90_84362b80d4e0d57d2cf082535ba202e2.jpg" alt="">
+                       <img height="200px" width="180px  " src="https://static2.vieon.vn/vieplay-image/poster_v4/2022/01/11/1743wj7o_660x946-tanthandieudaihiep.jpg" alt="">
+                      </div>
+                      <div class="carousel-item">
+                       <img height="200px" width="180px  " style="margin-right:10px; margin-left: 15px;" src="https://img.cdn.vncdn.io/cinema/img/1769222641137689-5.jpg" alt="">
+                        <img height="200px" width="180px  "   style="margin-right:15px" src="https://image.mpapis.xyz/poster/chi-chi-em-em-2-11092.jpg" >
+                        <img height="200px" width="180px  " style="margin-right:15px"  src="https://subnhanh.cdn1-img.net/toi-la-chihiro-call-me-chihiro-2023-vietsub_1.jpg" alt="">
+                        <img height="200px" width="180px  " style="margin-right:15px" src="https://gamek.mediacdn.vn/133514250583805952/2022/4/4/fc2-164904738916349427555.jpg" alt="">
+                        <img height="200px" width="180px  "  src="https://rapchieuphim.com/photos/3/phim-ngoi-den-ky-quai/phim-ngoi-den-ky-quai.jpg" alt="">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+    </div>
             
-        </div>
+        
           
-         <div class="comment">
+         <!-- <div class="comment">
             <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="10"></div>
     </div>
-    </div>
+    </div> -->
 
-   
+
+
+
+
+    <!-- comment -->
+    <div class="container-comment-user">
+        <div class="action-comment-user">
+            <div class="left-action-comment-user">
+                <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt="">
+            </div>
+            <div class="right-action-comment-user">
+                <div>
+                <!-- <form> -->
+                    <textarea id="comment" placeholder="Nhập bình luận..." value="" style="height: 5vw;"></textarea>
+                <!-- </form> -->
+            </div>
+            <div class="comment-btn">
+                <input id="submit" type="submit" value="Đăng">
+            </div>
+        </div>        
+    </div>
+    <div>
+        <div class="show-comment-user">
+            <h4>Bình luận</h4>
+            <div id="comment-box"></div>
+        </div>
+        <!-- <div class="post-comment">
+            <div class="list">
+                <div class="comment-avt">
+                    <div class="user-image"><img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt=""></div>
+                </div>
+                <div class="user">
+                    <div class="user-meta">
+                        <div class="comment-info">
+                            <div class="name">qqqsfsadgsgasdg</div>
+                            <div class="day">10 days ago</div>
+                        </div>
+                        <div class="info-btn">
+                        </div>
+                    </div>
+                    <div class="comment-post">test comment</div>
+                </div>
+                
+            </div>
+        </div> -->
+    </div>
+</div>
+
+</div>
+
+</div>
 
     <div class="width100">
             
@@ -143,6 +242,8 @@
         </div>
     </div>
     <script src="./assets/js/dataFilm.js"></script>
+    <script src="./assets/js/comment.js"></script>
+    <script src="./assets/js/showdataforWatchfilm.js"></script>
 </body>
 
 </html>
