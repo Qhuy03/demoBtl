@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link rel="stylesheet" href="./assets/icont/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"> <!--Link icont-->
     <link rel="stylesheet" href="./assets/css/comment.css">
-    <link rel="stylesheet" href="./assets/css/watchcomment.css">
+
 </head>
 <body>
    <div id="page">
@@ -175,52 +175,69 @@
                         </div>
                         
 
-                        <!-- <div class="container-form-comment">
-                            <div class="total-comment">
-                                <p>2 bình luận</p>
+                        <div class="container-form-comment">
+                            <div class="comment-head">
+                                <div><span id="count">0</span> bình luận</div>
                                 <div class="sort-comment">
-                                    <span>Sắp sếp theo</span>
-                                    <select name="" id="">
+                                    <!-- <span>Sắp sếp theo</span> -->
+                                    <!-- <select name="" id="">
                                             <option value="newest">Mới nhất</option>
                                             <option value="oldest">Cũ nhất</option>
-                                    </select>
+                                    </select> -->
                                 </div>
                             </div>
+
+
+
+
+
+
+
+                            <!-- comment -->
                             <div class="container-comment-user">
                                 <div class="action-comment-user">
                                     <div class="left-action-comment-user">
-                                        <img src="./assets/images/glx_trade.png" alt="">
+                                        <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt="">
                                     </div>
                                     <div class="right-action-comment-user">
-                                        <div class="input-comment">
-                                            <input type="text" id="input-user-comment">
-                                            <a href="#"><i class="fas fa-camera"></i></a>
-                                        </div>
-                                        <div class="btn-comment-user">
-                                            <button>Đăng</button>
-                                        </div>
+                                        <div>
+                                        <!-- <form> -->
+                                            <textarea id="comment" placeholder="Nhập bình luận..." value="" style="height: 5vw;"></textarea>
+                                        <!-- </form> -->
                                     </div>
-                                    
-                                </div>
+                                    <div class="comment-btn">
+                                        <input id="submit" type="submit" value="Đăng">
+                                    </div>
+                                </div>        
+                            </div>
+                            <div>
                                 <div class="show-comment-user">
-                                    <ul id="ul-show-comment">
-                                        <li>
-                                            <div class="action-comment-user">
-                                                <div class="left-action-comment-user">
-                                                    <img src="./assets/images/glx_trade.png" alt="">
+                                    <h4>Bình luận</h4>
+                                    <div id="comment-box"></div>
+                                </div>
+                                <!-- <div class="post-comment">
+                                    <div class="list">
+                                        <div class="comment-avt">
+                                            <div class="user-image"><img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt=""></div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="user-meta">
+                                                <div class="comment-info">
+                                                    <div class="name">qqqsfsadgsgasdg</div>
+                                                    <div class="day">10 days ago</div>
                                                 </div>
-                                                <div class="right-action-comment-user">
-                                                    <div class="input-comment" id="input-comment">
-                                                        <p>hay quá lo</p>
-                                                    </div>
+                                                <div class="info-btn">
                                                 </div>
                                             </div>
-                                        </li>
+                                            <div class="comment-post">test comment</div>
+                                        </div>
                                         
-                                    </ul>
-                                </div>
+                                    </div>
+                                </div> -->
                             </div>
-                        </div> -->
+                        </div>
+
+    </div>
                        
                     </div>
                     
@@ -346,48 +363,7 @@
         
     </div>
      <!-- comment -->
-     <div class="container-comment-user">
-        <div class="action-comment-user">
-            <div class="left-action-comment-user">
-                <img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt="">
-            </div>
-            <div class="right-action-comment-user">
-                <div>
-                <!-- <form> -->
-                    <textarea id="comment" placeholder="Nhập bình luận..." value="" style="height: 5vw;"></textarea>
-                <!-- </form> -->
-            </div>
-            <div class="comment-btn">
-                <input id="submit" type="submit" value="Đăng">
-            </div>
-        </div>        
-    </div>
-    <div>
-        <div class="show-comment-user">
-            <h4>Bình luận</h4>
-            <div id="comment-box"></div>
-        </div>
-        <!-- <div class="post-comment">
-            <div class="list">
-                <div class="comment-avt">
-                    <div class="user-image"><img src="https://inkythuatso.com/uploads/thumbnails/800/2023/03/9-anh-dai-dien-trang-inkythuatso-03-15-27-03.jpg" alt=""></div>
-                </div>
-                <div class="user">
-                    <div class="user-meta">
-                        <div class="comment-info">
-                            <div class="name">qqqsfsadgsgasdg</div>
-                            <div class="day">10 days ago</div>
-                        </div>
-                        <div class="info-btn">
-                        </div>
-                    </div>
-                    <div class="comment-post">test comment</div>
-                </div>
-                
-            </div>
-        </div> -->
-    </div>
-</div>
+     
 
 </div>
 
